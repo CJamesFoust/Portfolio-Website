@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Reenie+Beanie&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Christopher Foust</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active"><span id="home-nav" class="nav-element active">Home</span></a></li>
+                <li><a href="#about" class="ml-10"><span id="about-nav" class="nav-element">About</span></a></li>
+                <li><a href="#portfolio" class="ml-10"><span id="portfolio-nav" class="nav-element">Portfolio</span></a></li>
+                <li><a href="#contact" class="ml-10"><span id="contact-nav" class="nav-element">Contact</span></a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="hero">
+                <div class="hero-container">
+                    <h1 class="big-text" id="parent">Christopher Foust</h1>
+                    <h2 class="mid-text">Hi, I'm A Full Stack Developer From Tampa</h2>
+                    <a href="#about" class="">
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" fill="currentColor" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <div class="intro">
+            <div class="intro-text">
+                <h1 class="hide">
+                    <span class="text">Welcome to</span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text">My Website</span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text"></span>
+                </h1>
+            </div>
+        </div>
+        <div class="slider"></div>
+    </div>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>I'm a software developer currently in Tampa, FL, looking to move to Colorado. I have a passion for front end development and UI design. I went to Full Sail University for graphic design, giving me a background in design and color theory and then to Coding Dojo to learn full stack development, graduating with Black Belts in MERN, Java, and Python, the highest grades attainable.</p>
+                    <p class="mt-20">I have an affinity for learning and challenging myself. An environment where I can consistently learn and problem-solve is where I thrive.</p>
+                </div>
+                <div class="col skills">
+                    <div class="content">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <span class="skill">Python</span>
+                                <div class="progress-bar-total">
+                                    <div class="progress-bar" style="width: 300px"></div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <span class="skill">Java</span>
+                                <div class="progress-bar-total">
+                                    <div class="progress-bar" style="width: 250px"></div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <span class="skill">React</span>
+                                <div class="progress-bar-total">
+                                    <div class="progress-bar" style="width: 320px"></div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <span class="skill">HTML/CSS</span>
+                                <div class="progress-bar-total">
+                                    <div class="progress-bar" style="width: 360px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-title mt-100">
+                <h2>What I Do</h2>
+            </div>
+            <div class="row">
+                <div class="col-2 fade-in">
+                    <img src="/imgs/ui-design.svg" id="ui" class="icons" />
+                    <h3>UI Design</h3>
+                    <p class="mt-20">Keeping UI's clean and visually appealing.</p>
+                </div>
+                <div class="col-2 fade-in">
+                    <img src="/imgs/coding.svg" id="responsive" class="icons" />
+                    <h3>Responsive Design</h3>
+                    <p class="mt-20">Designing websites to be responsive, no matter the screen size</p>
+                </div>
+                <div class="col-2 fade-in">
+                    <img src="/imgs/prototyping.svg" id="database" class="icons" />
+                    <h3>Database</h3>
+                    <p class="mt-20">SQL and NoSQL database comprehension.</p>
+                </div>
+            <div class="row mt-100">
+                <div class="col-2 fade-in">
+                    <img src="/imgs/idea.svg" id="problemSolving" class="icons" />
+                    <h3>Problem Solving</h3>
+                    <p class="mt-20">Finding creative solutions to software development problems.</p>
+                </div>
+                <div class="col-2 fade-in">
+                    <img src="/imgs/network.svg" id="teamPlayer" class="icons" />
+                    <h3>Team Player</h3>
+                    <p class="mt-20">Always willing to go the extra mile to help the team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="portfolio-container">
+            <div class="portfolio-title">
+                <h2>My Portfolio</h2>
+            </div>
+            <div class="row spaceBetween">
+                <div class="col flex-justify">
+                    <h4>Task Manager</h4>
+                    <h6>Java/MySQL</h6>
+                    <div class="test-1"></div>
+                </div>
+                <div class="col flex-justify">
+                    <!-- https://github.com/PPadilla44/Discord-Clone -->
+                    <h4>Discord Clone</h4>
+                    <h6>React/MongoDB</h6>
+                    <div class="test-2"></div>
+                </div>
+            </div>
+            <div class="row spaceBetween">
+                <div class="col flex-justify">
+                    <h4>TV Show Tracker</h4>
+                    <h6>Python/Flask</h6>
+                    <div class="test-3"></div>
+                </div>
+                <div class="col flex-justify">
+                    <h4>Placeholder</h4>
+                    <h6>Placeholder</h6>
+                    <div class="test-4">4</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>contact</h1>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

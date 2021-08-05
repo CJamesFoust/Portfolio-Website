@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+
+html { 
+    background-color: rgb(148, 160, 180);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+main,
+landing {
+    font-family: 'Roboto', sans-serif;
+}
+
+#hero:before {
+    content: ""
+}
+
+#hero .hero-container,
+#hero:before {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+#hero {
+    height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(148, 160, 180);
+    background-size: cover;
+    position: relative;
+    color: rgb(15, 45, 64);
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 15px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    z-index: 100;
+    width: 100%;
+    user-select: none;
+    height: 5vh;
+    background-color: rgba(148, 160, 180, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 997;
+}
+
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 15%;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.nav-links li {
+    font-size: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    color: black
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+#logo {
+    font-family: 'Reenie Beanie', cursive;
+    font-weight: lighter;
+    font-size: 3rem;
+}
+
+.big-text {
+    font-size: 5rem;
+    margin: 0 0 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    user-select: none;
+}
+
+.mid-text {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;    
+    font-weight: 200;
+    user-select: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.arrow {    
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.arrow:hover {    
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.intro {
+    background-color: rgb(10, 28, 43);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.slider {
+    background-color: rgb(15, 45, 64);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    z-index: 999;
+}
+
+.intro-text {
+    font-family: "Heebo", sans-serif;
+    font-size: 3rem;
+    color: white;
+}
+
+.hide {
+    background-color: rgb(10, 28, 43);
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateX(100%);
+    display: inline-block;
+}
+
+#about {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding-top: 90px;
+    font-family: 'Raleway', sans-serif;
+    user-select: none;
+}
+
+#portfolio {
+    background-color: rgb(248, 247, 247);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 90px;
+    font-family: 'Raleway', sans-serif;
+    user-select: none;
+}
+
+#contact {
+    background-color: white;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.about-container {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-title {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+.row {
+    width: 800px;
+    min-width: 40vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col {
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-2 {
+    position: relative;
+    padding: 0 15px;
+    flex: 1;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.skill {
+    margin: 0 0 6px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    color: #3b434a
+}
+
+.progress {
+    height: 50px;
+    display: block;
+    background: none;
+}
+
+.progress-bar-total {
+    background-color: rgb(202, 202, 202);
+    width: 400px;
+}
+
+.progress-bar {
+    background-color: rgb(132, 148, 177);
+    width: 360px;
+    height: 10px;
+}
+
+.icons {
+    margin-bottom: 20px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+opacity: 1;
+}
+
+.fade-in-2 {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in-2.appear {
+opacity: 1;
+}
+
+.portfolio-title {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+.portfolio-container {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.flex-justify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.test-1 {
+    flex: 1;
+    width: 400px;
+    min-height: 400px;
+    background-image: url('/imgs/TaskManager.png');
+    background-size: cover;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.test-2 {
+    flex: 1;
+    width: 400px;
+    min-height: 400px;
+    background-image: url('/imgs/DiscordClone.png');
+    background-size: cover;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.test-3 {
+    margin-top: 10px;
+    flex: 1;
+    width: 400px;
+    min-height: 400px;
+    background-image: url('/imgs/TVTracker.png');
+    background-size: cover;
+    border: 1px solid black;
+}
+
+.test-4 {
+    margin-top: 10px;
+    flex: 1;
+    width: 400px;
+    min-height: 400px;
+    background-color: rgb(73, 94, 112);
+    border: 1px solid black;
+}
