@@ -369,6 +369,8 @@ opacity: 1;
     flex: 1;
     width: 400px;
     min-height: 400px;
-    background-color: rgb(73, 94, 112);
+    background-image: url('/imgs/EmployeePortal.png');
+    background-size: cover;
     border: 1px solid black;
+}
 }
