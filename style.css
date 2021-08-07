@@ -94,6 +94,10 @@ nav {
     margin-top: 20px;
 }
 
+.mt-50 {
+    margin-top: 50;
+}
+
 .mt-100 {
     margin-top: 100px;
 }
@@ -199,9 +203,15 @@ nav {
 }
 
 #contact {
-    background-color: white;
+    background-color: rgb(148, 160, 180);
     height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 90px;
     font-family: 'Raleway', sans-serif;
+    user-select: none;
+    color: white;
 }
 
 .about-container {
@@ -230,6 +240,10 @@ nav {
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
+}
+
+.row-900 {
+    width: 900px;
 }
 
 .col {
@@ -281,7 +295,7 @@ nav {
 
 .icons {
     margin-bottom: 20px;
-    height: 120px;
+    height: 60px;
     border-radius: 50%;
 }
 
@@ -332,10 +346,10 @@ opacity: 1;
     flex-direction: column;
 }
 
-.test-1 {
+.project-1 {
     flex: 1;
-    width: 400px;
-    min-height: 400px;
+    width: 300px;
+    min-height: 300px;
     background-image: url('imgs/TaskManager.png');
     background-size: cover;
     border: 1px solid black;
@@ -343,10 +357,10 @@ opacity: 1;
     margin-bottom: 30px;
 }
 
-.test-2 {
+.project-2 {
     flex: 1;
-    width: 400px;
-    min-height: 400px;
+    width: 300px;
+    min-height: 300px;
     background-image: url('imgs/DiscordClone.png');
     background-size: cover;
     border: 1px solid black;
@@ -354,22 +368,71 @@ opacity: 1;
     margin-bottom: 30px;
 }
 
-.test-3 {
+.project-3 {
     margin-top: 10px;
     flex: 1;
-    width: 400px;
-    min-height: 400px;
+    width: 300px;
+    min-height: 300px;
     background-image: url('imgs/TVTracker.png');
     background-size: cover;
     border: 1px solid black;
 }
 
-.test-4 {
+.project-4 {
     margin-top: 10px;
     flex: 1;
-    width: 400px;
-    min-height: 400px;
+    width: 300px;
+    min-height: 300px;
     background-image: url('imgs/EmployeePortal.png');
     background-size: cover;
     border: 1px solid black;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 800px;
+    color: black;
+}
+
+.self {
+    border: 10px solid white;
+    box-shadow: 0px 0px 10px;
+    border-radius: 5px;
+}
+
+.contact-title {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+.contact-links {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(240, 240, 240);
+    border:10px solid white;
+    box-shadow: 0px 0px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 50px;
+}
+
+.contact-h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black
+}
+
+@media screen and (min-width: 1024px) {
+    
 }

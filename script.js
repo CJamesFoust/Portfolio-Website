@@ -1,6 +1,8 @@
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } } )
 const faders = document.querySelectorAll('.fade-in');
 const fadersTwo = document.querySelectorAll('.fade-in-2');
+const photoFader = document.getElementById('self');
+console.log(photoFader)
 
 tl.to(".text", { x: "0%", duration: 1.5, stagger: 0.25 });
 tl.to(".slider", { x: "-100%", duration: 1.5, delay: 1 });
@@ -18,7 +20,6 @@ const homeNav = document.getElementById('home-nav')
 const portfolioNav = document.getElementById('portfolio-nav')
 const contactNav = document.getElementById('contact-nav')
 const navElements = document.getElementsByClassName('nav-element')
-console.log(navElements)
 
 const cLogWindow = () => {
     if(window.pageYOffset < aboutY) {
