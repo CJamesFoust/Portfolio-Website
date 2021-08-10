@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, viewport-fit=cover" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Reenie+Beanie&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Christopher Foust</title>
 </head>
 <body>
+    <nav>
+        <ul class="nav-links" id="topNav">
+            <li><a href="#hero" class="active"><span id="home-nav" class="nav-element active">Home</span></a></li>
+            <li><a href="#about" class="ml-10"><span id="about-nav" class="nav-element">About</span></a></li>
+            <li><a href="#portfolio" class="ml-10"><span id="portfolio-nav" class="nav-element">Portfolio</span></a></li>
+            <li><a href="#contact" class="ml-10"><span id="contact-nav" class="nav-element">Contact</span></a></li>
+        </ul>
+        <a href="javascript:void(0);" class="nav-icon" onclick="openNavBar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
     <div class="container">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#hero" class="active"><span id="home-nav" class="nav-element active">Home</span></a></li>
-                <li><a href="#about" class="ml-10"><span id="about-nav" class="nav-element">About</span></a></li>
-                <li><a href="#portfolio" class="ml-10"><span id="portfolio-nav" class="nav-element">Portfolio</span></a></li>
-                <li><a href="#contact" class="ml-10"><span id="contact-nav" class="nav-element">Contact</span></a></li>
-            </ul>
-        </nav>
         <main>
             <section id="hero">
                 <div class="hero-container">
-                    <h1 class="big-text" id="parent">Christopher Foust</h1>
+                    <h1 class="big-text" id="parent"><span>Christopher</span> <span>Foust</span></h1>
                     <h2 class="mid-text">Hi, I'm A Full Stack Developer From Tampa</h2>
                     <a href="#about" class="">
                         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -51,10 +55,10 @@
     <section id="about">
         <div class="about-container">
             <div class="about-title">
-                <h2>About Me</h2>
+                <h2 id="aboutHead">About Me</h2>
             </div>
-            <div class="row">
-                <div class="col">
+            <div class="row column" id="about-column">
+                <div class="col" id="about-text">
                     <p>I'm a software developer currently in Tampa, FL, looking to move to Colorado. I have a passion for front end development and UI design. I went to Full Sail University for graphic design, giving me a background in design and color theory and then to Coding Dojo to learn full stack development, graduating with Black Belts in MERN, Java, and Python, the highest grades attainable.</p>
                     <p class="mt-20">I have an affinity for learning and challenging myself. An environment where I can consistently learn and problem-solve is where I thrive.</p>
                 </div>
@@ -64,25 +68,25 @@
                             <div class="progress">
                                 <span class="skill">Python</span>
                                 <div class="progress-bar-total">
-                                    <div class="progress-bar" style="width: 300px"></div>
+                                    <div class="progress-bar" id="python"></div>
                                 </div>
                             </div>
                             <div class="progress">
                                 <span class="skill">Java</span>
                                 <div class="progress-bar-total">
-                                    <div class="progress-bar" style="width: 250px"></div>
+                                    <div class="progress-bar" id="java"></div>
                                 </div>
                             </div>
                             <div class="progress">
                                 <span class="skill">React</span>
                                 <div class="progress-bar-total">
-                                    <div class="progress-bar" style="width: 320px"></div>
+                                    <div class="progress-bar" id="react"></div>
                                 </div>
                             </div>
                             <div class="progress">
                                 <span class="skill">HTML/CSS</span>
                                 <div class="progress-bar-total">
-                                    <div class="progress-bar" style="width: 360px"></div>
+                                    <div class="progress-bar" id="html"></div>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +96,7 @@
             <div class="about-title mt-50">
                 <h2>What I Do</h2>
             </div>
-            <div class="row">
+            <div class="row max-500">
                 <div class="col-2 fade-in">
                     <img src="imgs/ui-design.svg" id="ui" class="icons" />
                     <h3>UI Design</h3>
@@ -108,7 +112,7 @@
                     <h3>Database</h3>
                     <p class="mt-20">SQL and NoSQL database comprehension.</p>
                 </div>
-            <div class="row mt-50">
+            <div class="row mt-50 max-500">
                 <div class="col-2 fade-in">
                     <img src="imgs/idea.svg" id="problemSolving" class="icons" />
                     <h3>Problem Solving</h3>
@@ -131,25 +135,25 @@
                 <div class="col flex-justify">
                     <h4>Task Manager</h4>
                     <h6>Java/MySQL</h6>
-                    <a href="https://github.com/CJamesFoust/Task-Manager" target="_blank"><div class="project-1"></div></a>
+                    <a href="https://github.com/CJamesFoust/Task-Manager" target="_blank"><div class="project-1 project-tablet "></div></a>
                 </div>
                 <div class="col flex-justify">
                     <!-- https://github.com/PPadilla44/Discord-Clone -->
                     <h4>Discord Clone</h4>
                     <h6>React/MongoDB</h6>
-                    <a href="https://github.com/PPadilla44/Discord-Clone" target="_blank"><div class="project-2"></div></a>
+                    <a href="https://github.com/PPadilla44/Discord-Clone" target="_blank"><div class="project-2 project-tablet "></div></a>
                 </div>
             </div>
             <div class="row spaceBetween row-900">
                 <div class="col flex-justify">
                     <h4>TV Show Tracker</h4>
                     <h6>Python/Flask</h6>
-                    <a href="https://github.com/CJamesFoust/python" target="_blank"><div class="project-3"></div></a>
+                    <a href="https://github.com/CJamesFoust/python" target="_blank"><div class="project-3 project-tablet "></div></a>
                 </div>
                 <div class="col flex-justify">
                     <h4>Employee Portal</h4>
                     <h6>Python/Flask</h6>
-                    <a href="https://github.com/CJamesFoust/Employee-Portal" target="_blank"><div class="project-4"></div></a>
+                    <a href="https://github.com/CJamesFoust/Employee-Portal" target="_blank"><div class="project-4 project-tablet "></div></a>
                 </div>
             </div>
         </div>

@@ -2,15 +2,20 @@ const tl = gsap.timeline({ defaults: { ease: "power1.out" } } )
 const faders = document.querySelectorAll('.fade-in');
 const fadersTwo = document.querySelectorAll('.fade-in-2');
 const photoFader = document.getElementById('self');
-console.log(photoFader)
 
-tl.to(".text", { x: "0%", duration: 1.5, stagger: 0.25 });
-tl.to(".slider", { x: "-100%", duration: 1.5, delay: 1 });
-tl.to(".intro", { x: "-100%", duration: 1}, "-=1.5");
-tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1});
-tl.fromTo(".big-text", { opacity: 0 }, { opacity: 1, duration: 1}, "-=1.5");
-tl.fromTo(".mid-text", { opacity: 0 }, { opacity: 1, duration: 1}, "-=1");
-tl.fromTo(".arrow", { opacity: 0 }, { opacity: 1, duration: 1}, "-=.5");
+const windowSize = window.innerWidth;
+
+if(windowSize >= 768) {
+    tl.to(".text", { x: "0%", duration: 1.5, stagger: 0.25 });
+    tl.to(".slider", { x: "-100%", duration: 1.5, delay: 1 });
+    tl.to(".intro", { x: "-100%", duration: 1}, "-=1.5");
+    tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1});
+    tl.fromTo(".big-text", { opacity: 0 }, { opacity: 1, duration: 1}, "-=1.5");
+    tl.fromTo(".mid-text", { opacity: 0 }, { opacity: 1, duration: 1}, "-=1");
+    tl.fromTo(".arrow", { opacity: 0 }, { opacity: 1, duration: 1}, "-=.5");
+} else {
+    tl.to(".slider", { x: "-200%", duration: 1.5, delay: 0 });
+}
 
 const aboutY = document.getElementById('about').offsetTop;
 const portfolioY = document.getElementById('portfolio').offsetTop;
@@ -82,3 +87,13 @@ const observer = new IntersectionObserver(entries => {
 faders.forEach(fader => {
     observer.observe(fader);
 })
+function openNavBar() {
+    var x = document.getElementById('topNav');
+    if (x.style.display === "flex") {
+        x.style.display = "none";
+        x.style.backgroundColor = "none";
+    } else {
+        x.style.display = "flex"
+        x.style.backgroundColor = "rgba(148, 160, 180, .8)";
+    }
+}
